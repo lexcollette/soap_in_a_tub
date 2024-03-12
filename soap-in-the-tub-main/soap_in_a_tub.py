@@ -30,8 +30,6 @@ def soap_in_a_tub(soap_file="assets/bar_of_soap3.png", number_of_droplets=1000):
 
         data.append([shower.total_droplets, soap.percentage_remaining()])
 
-        animate_simulation(soap, shower)
-
 
     df = pd.DataFrame(data, columns=['Droplets', 'Soap Remaining'])
 
